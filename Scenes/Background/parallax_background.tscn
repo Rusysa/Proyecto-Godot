@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcnnln01fponj"]
+
+[ext_resource type="Texture2D" uid="uid://c6aonh24fx4ew" path="res://Assets/images/Palm Tree Island/Sprites/Background/BG Image.png" id="1_064p8"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="BgImage" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+position = Vector2(632, 307)
+scale = Vector2(3.52083, 4.86719)
+texture = ExtResource("1_064p8")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1350, 0)
