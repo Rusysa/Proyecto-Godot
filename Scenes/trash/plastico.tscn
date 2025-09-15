@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://djw1febh6r6vt"]
+
+[ext_resource type="Texture2D" uid="uid://3s754pvr5khf" path="res://Assets/images/plastic-bottle-in-pixel-art-style-vector-removebg-preview.png" id="1_agl24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a545"]
+size = Vector2(54.5, 162)
+
+[node name="Plastico" type="Area2D"]
+rotation = -0.191011
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_agl24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.25, 17)
+shape = SubResource("RectangleShape2D_7a545")

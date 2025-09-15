@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8pve7n2h616x"]
+
+[ext_resource type="Texture2D" uid="uid://bclfirbinmja6" path="res://Assets/images/containers/palstico-removebg-preview.png" id="1_3iql8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgmq5"]
+size = Vector2(308, 319)
+
+[node name="Plasticos" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3iql8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 65)
+shape = SubResource("RectangleShape2D_pgmq5")

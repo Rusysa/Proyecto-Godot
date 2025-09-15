@@ -1,19 +1,42 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccm8gytla43lc"]
+[gd_scene load_steps=8 format=3 uid="uid://ccm8gytla43lc"]
 
 [ext_resource type="PackedScene" uid="uid://dcnnln01fponj" path="res://Scenes/Background/parallax_background.tscn" id="1_3toqo"]
 [ext_resource type="PackedScene" uid="uid://cjbs2fh6s3xb" path="res://Scenes/Player/main_character.tscn" id="1_bd11h"]
 [ext_resource type="Script" uid="uid://djhcnkf6aopgq" path="res://Script/background/parallax_background.gd" id="3_htofc"]
 [ext_resource type="PackedScene" uid="uid://dbpauhvkkpfqw" path="res://Scenes/Background/Map.tscn" id="3_itpvm"]
+[ext_resource type="PackedScene" uid="uid://dvsorsiqeet66" path="res://Scenes/Containers/glass_container.tscn" id="5_hbdc3"]
+[ext_resource type="PackedScene" uid="uid://siyjt7uvj6lx" path="res://Scenes/Containers/metal.tscn" id="6_q1o3j"]
+[ext_resource type="PackedScene" uid="uid://b8pve7n2h616x" path="res://Scenes/Containers/plasticos.tscn" id="7_iqa5h"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="GameController" type="Node2D" parent="."]
+
 [node name="Node2D" parent="." instance=ExtResource("3_itpvm")]
-position = Vector2(-1, -22)
+position = Vector2(-45, -22)
 
 [node name="Main_character" parent="." instance=ExtResource("1_bd11h")]
 position = Vector2(628, 529)
+
+[node name="HeldSlot" type="Node2D" parent="Main_character"]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_3toqo")]
 offset = Vector2(0, 3.41)
 transform = Transform2D(1, 0, 0, 1, 0, 3.41)
 script = ExtResource("3_htofc")
+
+[node name="containers" type="Node2D" parent="."]
+z_index = -1
+position = Vector2(-64, 2)
+
+[node name="metal" parent="containers" instance=ExtResource("6_q1o3j")]
+position = Vector2(786, 516)
+scale = Vector2(0.22, 0.22)
+
+[node name="Plasticos" parent="containers" instance=ExtResource("7_iqa5h")]
+position = Vector2(702, 517)
+scale = Vector2(0.21, 0.21)
+
+[node name="Vidrios" parent="containers" instance=ExtResource("5_hbdc3")]
+position = Vector2(621, 527)
+scale = Vector2(0.2, 0.2)

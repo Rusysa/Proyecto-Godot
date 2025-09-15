@@ -1,12 +1,16 @@
-res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees
+res://Scenes/trash
+res://Assets/images
+res://Scenes/Containers
+res://Assets/images/containers
+res://Script/trash
 res://Script/background
+res://Assets/images/Palm Tree Island/Sprites/Background
+res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees
 res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees
 res://Assets/The Male adventurer - Free/Dash
-res://Assets/images/Palm Tree Island/Sprites/Background
 res://Scenes/Background
 res://Assets/The Male adventurer - Free/Walk
 res://Script/player
 res://Assets/The Male adventurer - Free/Idle
 res://Scenes/levels
 res://
-res://Assets/images

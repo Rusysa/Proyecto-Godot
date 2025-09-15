@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvsorsiqeet66"]
+
+[ext_resource type="Texture2D" uid="uid://cxmv58vgatgwd" path="res://Assets/images/containers/vridrio-removebg-preview.png" id="1_es2wc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0igb"]
+size = Vector2(232, 340.375)
+
+[node name="Vidrios" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_es2wc")
+region_rect = Rect2(1053, 910, 407, 624)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 31.1875)
+shape = SubResource("RectangleShape2D_f0igb")

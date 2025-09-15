@@ -12,6 +12,28 @@
 [ext_resource type="Texture2D" uid="uid://46vr4faxmhaq" path="res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png" id="10_06l3d"]
 [ext_resource type="Texture2D" uid="uid://ddkanxpqj0sx3" path="res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png" id="11_xme38"]
 
+[sub_resource type="TileSet" id="TileSet_1i7xs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e0fjb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_xmqqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jrgc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_06l3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xme38")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u6bxr"]
 texture = ExtResource("1_1i7xs")
 0:0/0 = 0
@@ -215,8 +237,6 @@ texture = ExtResource("1_1i7xs")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_u6bxr")
 
-[sub_resource type="TileSet" id="TileSet_1i7xs"]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_06l3d"]
 animations = [{
 "frames": [{
@@ -237,28 +257,31 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_e0fjb"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_xmqqh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_jrgc2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_06l3d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_xme38")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_tw21w")
+
+[node name="TileMapLayer4" type="TileMapLayer" parent="."]
+position = Vector2(221, 570)
+rotation = 0.0752455
+scale = Vector2(1.2, 1.2)
+tile_set = SubResource("TileSet_1i7xs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMapLayer4"]
+position = Vector2(-17.8429, 7.19503)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_e0fjb")
+frame_progress = 0.0143587
+
+[node name="TileMapLayer7" type="TileMapLayer" parent="."]
+position = Vector2(1201, 564)
+rotation = 0.0752455
+scale = Vector2(1.7, 1.7)
+tile_set = SubResource("TileSet_1i7xs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMapLayer7"]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_e0fjb")
+frame_progress = 0.325387
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-358, 72)
@@ -284,19 +307,7 @@ position = Vector2(430, 476.848)
 scale = Vector2(2.5, 2.723)
 sprite_frames = SubResource("SpriteFrames_06l3d")
 animation = &"palma"
-frame_progress = 0.0429163
-
-[node name="TileMapLayer4" type="TileMapLayer" parent="."]
-position = Vector2(224, 533)
-rotation = 0.0752455
-scale = Vector2(1.2, 1.2)
-tile_set = SubResource("TileSet_1i7xs")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMapLayer4"]
-position = Vector2(-17.8429, 7.19503)
-scale = Vector2(1.5, 1.5)
-sprite_frames = SubResource("SpriteFrames_e0fjb")
-frame_progress = 0.490167
+frame_progress = 0.567106
 
 [node name="TileMapLayer6" type="TileMapLayer" parent="."]
 position = Vector2(1046, 547)
@@ -319,17 +330,6 @@ scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_e0fjb")
 frame_progress = 0.325387
 
-[node name="TileMapLayer7" type="TileMapLayer" parent="."]
-position = Vector2(1184, 519)
-rotation = 0.0752455
-scale = Vector2(1.7, 1.7)
-tile_set = SubResource("TileSet_1i7xs")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMapLayer7"]
-scale = Vector2(1.5, 1.5)
-sprite_frames = SubResource("SpriteFrames_e0fjb")
-frame_progress = 0.325387
-
 [node name="TileMapLayer3" type="TileMapLayer" parent="."]
 position = Vector2(600, -130)
 rotation = -0.00435594
@@ -348,4 +348,4 @@ position = Vector2(430, 476.848)
 scale = Vector2(2.5, 2.723)
 sprite_frames = SubResource("SpriteFrames_06l3d")
 animation = &"palma"
-frame_progress = 0.31858
+frame_progress = 0.842772
