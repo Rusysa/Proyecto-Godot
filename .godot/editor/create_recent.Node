@@ -1,3 +1,4 @@
+Camera2D
 TileMapLayer
 TileMap
 Sprite2D
@@ -6,5 +7,4 @@ ParallaxBackground
 CollisionShape2D
 XRController3D
 AnimatedSprite2D
-Camera2D
 CharacterBody2D

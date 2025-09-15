@@ -1,7 +1,4 @@
 res://Scenes/Player/main_character.tscn
-res://Script/player/main_character.gd
 res://Scenes/levels/Main.tscn
-res://Script/BackGround/big_clouds.gd
 res://Scenes/Background/parallax_background.tscn
 res://Scenes/Background/Map.tscn
-res://Script/BackGround/parallax_background.gd
