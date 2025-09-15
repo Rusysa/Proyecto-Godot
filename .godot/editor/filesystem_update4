@@ -2,3 +2,6 @@ res://Scenes/Player/main_character.tscn
 res://Scenes/levels/Main.tscn
 res://Scenes/Background/parallax_background.tscn
 res://Scenes/Background/Map.tscn
+res://Script/background/parallax_background.gd
+res://Script/player/main_character.gd
+res://Script/background/palmera.gd

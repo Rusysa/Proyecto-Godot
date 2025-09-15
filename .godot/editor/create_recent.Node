@@ -1,10 +1,10 @@
-Camera2D
-TileMapLayer
-TileMap
+AnimatedSprite2D
 Sprite2D
 ParallaxLayer
+TileMapLayer
+Camera2D
+TileMap
 ParallaxBackground
 CollisionShape2D
 XRController3D
-AnimatedSprite2D
 CharacterBody2D
