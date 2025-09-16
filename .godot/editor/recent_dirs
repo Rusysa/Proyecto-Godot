@@ -1,8 +1,13 @@
+res://Scenes/UI
 res://Scenes/trash
+res://Script/UI
+res://Script/MainScene
+res://Script/containers
+res://Script/trash
 res://Assets/images
+res://
 res://Scenes/Containers
 res://Assets/images/containers
-res://Script/trash
 res://Script/background
 res://Assets/images/Palm Tree Island/Sprites/Background
 res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees
@@ -13,4 +18,3 @@ res://Assets/The Male adventurer - Free/Walk
 res://Script/player
 res://Assets/The Male adventurer - Free/Idle
 res://Scenes/levels
-res://
