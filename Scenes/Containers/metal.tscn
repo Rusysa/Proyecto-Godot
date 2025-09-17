@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bbutvctwua17x" path="res://Script/containers/metal.gd" id="1_mw7cq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mw7cq"]
-size = Vector2(145, 265.5)
+size = Vector2(306, 265.5)
 
 [node name="metal" type="Area2D" groups=["container"]]
 collision_layer = 2
@@ -15,5 +15,5 @@ script = ExtResource("1_mw7cq")
 texture = ExtResource("1_86yrb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, 94.25)
+position = Vector2(1, 94.25)
 shape = SubResource("RectangleShape2D_mw7cq")

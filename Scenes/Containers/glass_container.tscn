@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ntvi5gbkltxo" path="res://Script/containers/glass_container.gd" id="1_f0igb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f0igb"]
-size = Vector2(232, 340.375)
+size = Vector2(299, 308)
 
 [node name="Vidrios" type="Area2D" groups=["container"]]
 collision_layer = 2
@@ -16,5 +16,5 @@ texture = ExtResource("1_es2wc")
 region_rect = Rect2(1053, 910, 407, 624)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 31.1875)
+position = Vector2(-2.5, 15)
 shape = SubResource("RectangleShape2D_f0igb")

@@ -6,6 +6,7 @@ extends Node2D
 # Variables del juego
 var score: int = 0
 var high_score: int = 0
+
 @export var grounded_objects_count: int = 0
 var base_fall_speed: float = 100.0
 var time_elapsed: float = 0.0
@@ -18,6 +19,7 @@ var time_elapsed: float = 0.0
 
 func _ready():
 	grounded_objects_count = 0
+	
 	# Conectamos las señales del SignalManager
 	SignalManager.on_score_updated.connect(_on_score_updated)
 	SignalManager.on_object_grounded.connect(_on_object_grounded)
@@ -27,6 +29,7 @@ func _ready():
 	load_high_score()
 	ui.update_score(score)
 	ui.update_high_score(high_score)
+	ui.update_grounded_objects(grounded_objects_count)
 	spawn_timer.start()
 
 func _process(delta):
@@ -58,16 +61,20 @@ func _on_spawn_timer_timeout():
 # Esta función se conecta a la señal area_entered del Suelo (Ground)
 		
 func _on_ground_area_entered(area):
+	if get_node("Main_character").held_object == area:
+		return
 	if area.is_in_group("object"):
 		# Solo contamos si no ha sido contado antes
 		if not area.is_grounded:
 			area.set_physics_process(false)
 			# Marcamos el objeto para que recuerde que está en el suelo
 			area.is_grounded = true
-			
 			grounded_objects_count += 1
-			print("Objeto ha tocado el suelo. Total: ", grounded_objects_count)
-			
+			print("SUMA: '", area.name, "' ha tocado el suelo. Total ahora: ", grounded_objects_count)
+			ui.update_grounded_objects(grounded_objects_count)
+		
+			#print("Objeto ha tocado el suelo. Total: ", grounded_objects_count)
+			area.get_node("Sprite2D").modulate = Color(0.5, 0.5, 0.5)
 			# Comprobamos la condición de derrota (ahora con 10)
 			if grounded_objects_count >= 10:
 				game_over()
@@ -77,7 +84,9 @@ func _on_ground_area_entered(area):
 func _on_grounded_object_collected():
 	if grounded_objects_count > 0:
 		grounded_objects_count -= 1
-	print("Objeto del suelo recogido. Quedan: ", grounded_objects_count)
+	#print("Objeto del suelo recogido. Quedan: ", grounded_objects_count)
+	ui.update_grounded_objects(grounded_objects_count)
+	print("RESTA: Se ha recogido un objeto del suelo. Total ahora: ", grounded_objects_count)
 
 
 func _on_score_updated(points):

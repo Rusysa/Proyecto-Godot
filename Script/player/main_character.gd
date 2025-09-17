@@ -52,16 +52,18 @@ func catch_object(object_to_catch):
 # Esta es la nueva función que se ejecutará en un momento seguro
 func _deferred_catch(object_to_catch):
 	# Revisa si el objeto estaba en el suelo
+	print("ACCIÓN: Jugador ha recogido a '", object_to_catch.name, "'.")
 	if object_to_catch.is_grounded:
 		SignalManager.on_grounded_object_collected.emit()
 		object_to_catch.is_grounded = false
 	
 	held_object = object_to_catch
 	# Ahora todas estas operaciones se ejecutan de forma segura
+	object_to_catch.disable_collision_briefly()
 	object_to_catch.reparent(hand_position)
 	object_to_catch.position = Vector2.ZERO
 	object_to_catch.set_physics_process(false)
-	object_to_catch.get_node("CollisionShape2D").set_deferred("disabled", true)
+	#object_to_catch.get_node("CollisionShape2D").set_deferred("disabled", true)
 
 
 # Función para depositar un objeto (VERSIÓN CORREGIDA)

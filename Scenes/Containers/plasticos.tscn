@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://meex4xg1qwpq" path="res://Script/containers/plasticos.gd" id="1_pgmq5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pgmq5"]
-size = Vector2(346, 284)
+size = Vector2(430, 262)
 
 [node name="Plasticos" type="Area2D" groups=["container"]]
 collision_layer = 2
@@ -15,5 +15,5 @@ script = ExtResource("1_pgmq5")
 texture = ExtResource("1_3iql8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-22, 92)
+position = Vector2(-8, 81)
 shape = SubResource("RectangleShape2D_pgmq5")

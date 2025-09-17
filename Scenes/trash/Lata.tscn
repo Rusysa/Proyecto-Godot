@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cdae22dc1eh0s" path="res://Assets/images/pixel-art-illustration-soda-pixelated-600nw-2543492611-removebg-preview.png" id="2_jip1n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w6hgt"]
-size = Vector2(153, 220)
+size = Vector2(135.177, 198.641)
 
 [node name="Lata" type="Area2D" groups=["object"]]
 rotation = 1.15284
@@ -17,5 +17,11 @@ script = ExtResource("1_g75d7")
 texture = ExtResource("2_jip1n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7, 23)
+position = Vector2(-8.11787, 18.2784)
 shape = SubResource("RectangleShape2D_w6hgt")
+
+[node name="CollisionTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="CollisionTimer" to="." method="_on_collision_timer_timeout"]

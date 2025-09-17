@@ -7,7 +7,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c32w2"]
 radius = 4.25
-height = 21.5
+height = 22.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xu747"]
 atlas = ExtResource("2_ljme4")
@@ -328,7 +328,6 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
 position = Vector2(1, -0.75)
 shape = SubResource("CapsuleShape2D_c32w2")
 
