@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757988633
-signal_manager.gd::GDScript::8363943456070499789::1757987451::0::1::::<>Node<><>0<>0<><>::
+::res://::1758091220
+main_menu.tscn::PackedScene::1149922038270386301::1758090956::0::1::::<><><>0<>0<><>::uid://dd83xl40skv16::::res://Script/UI/main_menu.gd
+signal_manager.gd::GDScript::8363943456070499789::1758050515::0::1::::<>Node<><>0<>0<><>::
 ::res://Assets/::1757931343
 ::res://Assets/images/::1757987851
 7030877.png::CompressedTexture2D/CompressedTexture2D::440506595254623694::1757965506::1757965506::1::::<><><>0<>0<>1571aee7abcff337425ea4486dfaec59<>res://.godot/imported/7030877.png-674cef708c05844411d32ec9b16f2d75.ctex::
@@ -1884,32 +1885,44 @@ walk_left_up.png::CompressedTexture2D/CompressedTexture2D::6955220786984518756::
 walk_right_down.png::CompressedTexture2D/CompressedTexture2D::8624030761558533834::1757931342::1757931508::1::::<><><>0<>0<>c5b4c8cd801cef804f82cdb6bd083bae<>res://.godot/imported/walk_right_down.png-36c85a0a487e7856efac4a5f0a3269ad.ctex::
 walk_right_up.png::CompressedTexture2D/CompressedTexture2D::114240440943953548::1757931342::1757931508::1::::<><><>0<>0<>b10d40027e607aa7c16d50f58ba57347<>res://.godot/imported/walk_right_up.png-dba6420026a4bbdc65adcaa4130173f3.ctex::
 walk_up.png::CompressedTexture2D/CompressedTexture2D::3931677240730091547::1757931342::1757931508::1::::<><><>0<>0<>75bbbb13262eae7620771189d28e74d1<>res://.godot/imported/walk_up.png-358a4746217a58c5a61635474ca6e924.ctex::
-::res://Scenes/::1757927182
-::res://Scenes/Background/::1757988834
-Map.tscn::PackedScene::7260452677478987362::1757988834::0::1::::<><><>0<>0<><>::uid://jlgmakixmb3i::::res://Assets/images/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png<>uid://dyufbugvyftbt::::res://Script/background/palmera.gd<>uid://bllb85ekf2xnn::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Bottom and Grass (32x32).png<>uid://b2f3fmr1it61k::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 01.png<>uid://be5t0hbpd7fev::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 02.png<>uid://d1gcu4t2ma17e::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 03.png<>uid://dsw8plpaurxka::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 04.png<>uid://w6770mpmmbsi::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 01.png<>uid://4i8ita8iwang::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 02.png<>uid://46vr4faxmhaq::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png<>uid://ddkanxpqj0sx3::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png
-parallax_background.tscn::PackedScene::7327286336409334083::1757988834::0::1::::<><><>0<>0<><>::uid://c6aonh24fx4ew::::res://Assets/images/Palm Tree Island/Sprites/Background/BG Image.png<>uid://bjedxx3eg0yo5::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png<>uid://d3liecqlqfsgl::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png<>uid://begptf1w3xgw3::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png<>uid://cm46nkxfvcam3::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png<>uid://dkesl8fjs7jll::::res://Assets/images/Palm Tree Island/Sprites/Background/Big Clouds.png<>uid://dl1n5263nbgih::::res://Script/background/nube_movimiento.gd
-::res://Scenes/Containers/::1757988834
-glass_container.tscn::PackedScene::8671267921957403241::1757988834::0::1::::<><><>0<>0<><>::uid://cxmv58vgatgwd::::res://Assets/images/containers/vridrio-removebg-preview.png
-metal.tscn::PackedScene::1281388535803155873::1757988834::0::1::::<><><>0<>0<><>::uid://csqivfplotf1f::::res://Assets/images/containers/metal-removebg-preview.png
-plasticos.tscn::PackedScene::4734902092149804069::1757988834::0::1::::<><><>0<>0<><>::uid://bclfirbinmja6::::res://Assets/images/containers/palstico-removebg-preview.png
-::res://Scenes/levels/::1757988834
-Main.tscn::PackedScene::4940007253648356464::1757988834::0::1::::<><><>0<>0<><>::uid://dcnnln01fponj::::res://Scenes/Background/parallax_background.tscn<>uid://cjbs2fh6s3xb::::res://Scenes/Player/main_character.tscn<>uid://djhcnkf6aopgq::::res://Script/background/parallax_background.gd<>uid://dbpauhvkkpfqw::::res://Scenes/Background/Map.tscn<>uid://dvsorsiqeet66::::res://Scenes/Containers/glass_container.tscn<>uid://siyjt7uvj6lx::::res://Scenes/Containers/metal.tscn<>uid://b8pve7n2h616x::::res://Scenes/Containers/plasticos.tscn
-::res://Scenes/Player/::1757988834
-main_character.tscn::PackedScene::159051374560348319::1757988834::0::1::::<><><>0<>0<><>::uid://bbgu4y8bxkitj::::res://Script/player/main_character.gd<>uid://dg4tyxutxig3f::::res://Assets/The Male adventurer - Free/Idle/idle.png<>uid://bi43xfy4j62gs::::res://Assets/The Male adventurer - Free/Dash/Dash.png<>uid://bqt1a6xouco5n::::res://Assets/The Male adventurer - Free/Walk/walk.png
-::res://Scenes/trash/::1757988834
-Lata.tscn::PackedScene::5303676279262029648::1757988915::0::1::::<><><>0<>0<><>::uid://na7yfsf08p8e::::res://Script/trash/area_2d.gd<>uid://cdae22dc1eh0s::::res://Assets/images/pixel-art-illustration-soda-pixelated-600nw-2543492611-removebg-preview.png
-plastico.tscn::PackedScene::7837965737190746353::1757988834::0::1::::<><><>0<>0<><>::uid://b511diiaxbejb::::res://Script/trash/plastico.gd<>uid://3s754pvr5khf::::res://Assets/images/plastic-bottle-in-pixel-art-style-vector-removebg-preview.png
-vidrio.tscn::PackedScene::2668169145231155267::1757988834::0::1::::<><><>0<>0<><>::uid://dag0omolehf6c::::res://Script/trash/vidrio.gd<>uid://gjncxvoyadb7::::res://Assets/images/7030877.png
-::res://Script/::1757986000
+::res://Scenes/::1757990113
+::res://Scenes/Background/::1758090955
+Map.tscn::PackedScene::7260452677478987362::1758090955::0::1::::<><><>0<>0<><>::uid://jlgmakixmb3i::::res://Assets/images/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png<>uid://dyufbugvyftbt::::res://Script/background/palmera.gd<>uid://bllb85ekf2xnn::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Bottom and Grass (32x32).png<>uid://b2f3fmr1it61k::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 01.png<>uid://be5t0hbpd7fev::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 02.png<>uid://d1gcu4t2ma17e::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 03.png<>uid://dsw8plpaurxka::::res://Assets/images/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Tree Top 04.png<>uid://w6770mpmmbsi::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 01.png<>uid://4i8ita8iwang::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 02.png<>uid://46vr4faxmhaq::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png<>uid://ddkanxpqj0sx3::::res://Assets/images/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png
+parallax_background.tscn::PackedScene::7327286336409334083::1758090955::0::1::::<><><>0<>0<><>::uid://c6aonh24fx4ew::::res://Assets/images/Palm Tree Island/Sprites/Background/BG Image.png<>uid://bjedxx3eg0yo5::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png<>uid://d3liecqlqfsgl::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png<>uid://begptf1w3xgw3::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png<>uid://cm46nkxfvcam3::::res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png<>uid://dkesl8fjs7jll::::res://Assets/images/Palm Tree Island/Sprites/Background/Big Clouds.png<>uid://dl1n5263nbgih::::res://Script/background/nube_movimiento.gd<>uid://2vrky4piub2j::::res://Assets/images/Palm Tree Island/Sprites/Background/Small Cloud 1.png<>uid://d37xk1ehn8q3r::::res://Assets/images/Palm Tree Island/Sprites/Background/Small Cloud 3.png
+::res://Scenes/Containers/::1758090956
+glass_container.tscn::PackedScene::8671267921957403241::1758090956::0::1::::<><><>0<>0<><>::uid://cxmv58vgatgwd::::res://Assets/images/containers/vridrio-removebg-preview.png<>uid://ntvi5gbkltxo::::res://Script/containers/glass_container.gd
+metal.tscn::PackedScene::1281388535803155873::1758090956::0::1::::<><><>0<>0<><>::uid://csqivfplotf1f::::res://Assets/images/containers/metal-removebg-preview.png<>uid://bbutvctwua17x::::res://Script/containers/metal.gd
+plasticos.tscn::PackedScene::4734902092149804069::1758090956::0::1::::<><><>0<>0<><>::uid://bclfirbinmja6::::res://Assets/images/containers/palstico-removebg-preview.png<>uid://meex4xg1qwpq::::res://Script/containers/plasticos.gd
+::res://Scenes/levels/::1758090955
+Main.tscn::PackedScene::4940007253648356464::1758090955::0::1::::<><><>0<>0<><>::uid://dcnnln01fponj::::res://Scenes/Background/parallax_background.tscn<>uid://cjbs2fh6s3xb::::res://Scenes/Player/main_character.tscn<>uid://dfeqi77q0g0wt::::res://Script/MainScene/main.gd<>uid://chte1kdnipojo::::res://Scenes/trash/Lata.tscn<>uid://djw1febh6r6vt::::res://Scenes/trash/plastico.tscn<>uid://djhcnkf6aopgq::::res://Script/background/parallax_background.gd<>uid://dbpauhvkkpfqw::::res://Scenes/Background/Map.tscn<>uid://beaqmdsemmucp::::res://Scenes/trash/vidrio.tscn<>uid://dvsorsiqeet66::::res://Scenes/Containers/glass_container.tscn<>uid://siyjt7uvj6lx::::res://Scenes/Containers/metal.tscn<>uid://b8pve7n2h616x::::res://Scenes/Containers/plasticos.tscn<>uid://du4taax6rx515::::res://Scenes/UI/ui.tscn
+::res://Scenes/Player/::1758090955
+main_character.tscn::PackedScene::159051374560348319::1758090955::0::1::::<><><>0<>0<><>::uid://bbgu4y8bxkitj::::res://Script/player/main_character.gd<>uid://dg4tyxutxig3f::::res://Assets/The Male adventurer - Free/Idle/idle.png<>uid://bi43xfy4j62gs::::res://Assets/The Male adventurer - Free/Dash/Dash.png<>uid://bqt1a6xouco5n::::res://Assets/The Male adventurer - Free/Walk/walk.png
+::res://Scenes/trash/::1758090956
+Lata.tscn::PackedScene::5303676279262029648::1758090956::0::1::::<><><>0<>0<><>::uid://na7yfsf08p8e::::res://Script/trash/lata.gd<>uid://cdae22dc1eh0s::::res://Assets/images/pixel-art-illustration-soda-pixelated-600nw-2543492611-removebg-preview.png
+plastico.tscn::PackedScene::7837965737190746353::1758090956::0::1::::<><><>0<>0<><>::uid://b511diiaxbejb::::res://Script/trash/plastico.gd<>uid://3s754pvr5khf::::res://Assets/images/plastic-bottle-in-pixel-art-style-vector-removebg-preview.png
+vidrio.tscn::PackedScene::2668169145231155267::1758090956::0::1::::<><><>0<>0<><>::uid://dag0omolehf6c::::res://Script/trash/vidrio.gd<>uid://gjncxvoyadb7::::res://Assets/images/7030877.png
+::res://Scenes/UI/::1758090956
+game_over.tscn::PackedScene::7835384906328602563::1758090956::0::1::::<><><>0<>0<><>::uid://65v2avn1guhs::::res://Script/UI/game_over.gd
+ui.tscn::PackedScene::8624059538532904178::1758090956::0::1::::<><><>0<>0<><>::uid://cdie33068l1lr::::res://Script/UI/ui.gd
+::res://Script/::1757989746
 ::res://Script/background/::1757962473
 nube_movimiento.gd::GDScript/GDScript::7985857514735326023::1757962473::0::1::::<>Sprite2D<><>0<>0<><>::
 palmera.gd::GDScript/GDScript::8885388284953277001::1757924809::0::1::::<>Node2D<><>0<>0<><>::
 parallax_background.gd::GDScript/GDScript::7805557471772899112::1757913498::0::1::::<>ParallaxBackground<><>0<>0<><>::
-::res://Script/containers/::1757927161
-::res://Script/MainScene/::1757986355
-::res://Script/player/::1757988770
-main_character.gd::GDScript::2470263233349586639::1757988770::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Script/trash/::1757987945
-area_2d.gd::GDScript::914441060801796570::1757987945::0::1::::<>Area2D<><>0<>0<><>::
-plastico.gd::GDScript::4547344246209285947::1757987686::0::1::::<>Area2D<><>0<>0<><>::
-vidrio.gd::GDScript::7173191895950372492::1757987623::0::1::::<>Area2D<><>0<>0<><>::
+::res://Script/containers/::1757989189
+glass_container.gd::GDScript/GDScript::952969072849476352::1757989100::0::1::::<>Area2D<><>0<>0<><>::
+metal.gd::GDScript/GDScript::2499088342371215999::1757989189::0::1::::<>Area2D<><>0<>0<><>::
+plasticos.gd::GDScript/GDScript::850809134919174022::1757989123::0::1::::<>Area2D<><>0<>0<><>::
+::res://Script/MainScene/::1758079369
+global.gd::GDScript/GDScript::2285800608832448585::1757989441::0::1::::<>Node<><>0<>0<><>::
+main.gd::GDScript::7519451269462793379::1758079369::0::1::::<>Node2D<><>0<>0<><>::
+::res://Script/player/::1758082894
+main_character.gd::GDScript::2470263233349586639::1758082894::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Script/trash/::1758050532
+lata.gd::GDScript::914441060801796570::1758050532::0::1::::<>Area2D<><>0<>0<><>::
+plastico.gd::GDScript::4547344246209285947::1758050522::0::1::::<>Area2D<><>0<>0<><>::
+vidrio.gd::GDScript::7173191895950372492::1758050515::0::1::::<>Area2D<><>0<>0<><>::
+::res://Script/UI/::1758073945
+game_over.gd::GDScript::2239108791750882304::1758073945::0::1::::<>Control<><>0<>0<><>::
+main_menu.gd::GDScript::7439694820651184055::1758069826::0::1::::<>Control<><>0<>0<><>::
+ui.gd::GDScript/GDScript::5000217301260154871::1758000829::0::1::::<>CanvasLayer<><>0<>0<><>::

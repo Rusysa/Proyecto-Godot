@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://siyjt7uvj6lx" path="res://Scenes/Containers/metal.tscn" id="6_q1o3j"]
 [ext_resource type="PackedScene" uid="uid://b8pve7n2h616x" path="res://Scenes/Containers/plasticos.tscn" id="7_iqa5h"]
 [ext_resource type="PackedScene" uid="uid://du4taax6rx515" path="res://Scenes/UI/ui.tscn" id="12_1mr13"]
-[ext_resource type="PackedScene" uid="uid://djvrv6hb41uk6" path="res://Scenes/UI/game_over.tscn" id="13_nabaj"]
 
 [sub_resource type="GDScript" id="GDScript_q1o3j"]
 
@@ -25,6 +24,9 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mr13"]
+size = Vector2(1278.5, 22)
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_iqa5h")
 object_scenes = Array[PackedScene]([ExtResource("2_omtow"), ExtResource("3_1mr13"), ExtResource("4_nabaj")])
@@ -36,7 +38,7 @@ script = SubResource("GDScript_q1o3j")
 position = Vector2(-2, -27)
 
 [node name="Main_character" parent="." instance=ExtResource("1_bd11h")]
-position = Vector2(628, 506)
+position = Vector2(626, 519)
 
 [node name="HeldSlot" type="Node2D" parent="Main_character"]
 
@@ -64,18 +66,18 @@ scale = Vector2(0.25, 0.25)
 [node name="SpawnArea" type="Node2D" parent="."]
 
 [node name="Ground" type="Area2D" parent="." groups=["ground"]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(638.5, 646)
+position = Vector2(638.5, 641)
 shape = SubResource("RectangleShape2D_q1o3j")
 
 [node name="SpawnTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 5.0
 autostart = true
 
 [node name="UI" parent="." instance=ExtResource("12_1mr13")]
-
-[node name="game_over" parent="." instance=ExtResource("13_nabaj")]
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_1mr13")
@@ -83,6 +85,12 @@ curve = SubResource("Curve2D_1mr13")
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(1178, -3)
 rotation = 3.13967
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(640.75, 581)
+shape = SubResource("RectangleShape2D_1mr13")
 
 [connection signal="area_entered" from="Ground" to="." method="_on_ground_area_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

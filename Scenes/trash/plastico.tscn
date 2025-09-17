@@ -9,6 +9,8 @@ size = Vector2(54.5, 162)
 [node name="Plastico" type="Area2D" groups=["object"]]
 rotation = -0.191011
 scale = Vector2(0.2, 0.2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_7a545")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

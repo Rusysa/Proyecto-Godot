@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://qnbbvpg28iqf"]
+
+[ext_resource type="Script" uid="uid://dd83xl40skv16" path="res://Script/UI/main_menu.gd" id="1_06t4h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
+font_size = 50
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 2
+offset_left = 531.0
+offset_top = 170.0
+offset_right = 792.0
+offset_bottom = 239.0
+text = "ECOCATCH"
+label_settings = SubResource("LabelSettings_7vrkn")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -64.0
+offset_right = 136.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "JUGAR
+"
+
+[node name="ControlButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "COMO JUGAR"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SALIR"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ControlButton" to="." method="_on_control_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

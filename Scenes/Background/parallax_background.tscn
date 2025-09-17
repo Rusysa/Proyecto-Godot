@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcnnln01fponj"]
+[gd_scene load_steps=11 format=3 uid="uid://dcnnln01fponj"]
 
 [ext_resource type="Texture2D" uid="uid://c6aonh24fx4ew" path="res://Assets/images/Palm Tree Island/Sprites/Background/BG Image.png" id="1_064p8"]
 [ext_resource type="Texture2D" uid="uid://bjedxx3eg0yo5" path="res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png" id="2_nj55x"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cm46nkxfvcam3" path="res://Assets/images/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png" id="5_ylr01"]
 [ext_resource type="Texture2D" uid="uid://dkesl8fjs7jll" path="res://Assets/images/Palm Tree Island/Sprites/Background/Big Clouds.png" id="6_de0b8"]
 [ext_resource type="Script" uid="uid://dl1n5263nbgih" path="res://Script/background/nube_movimiento.gd" id="6_f6i4q"]
+[ext_resource type="Texture2D" uid="uid://2vrky4piub2j" path="res://Assets/images/Palm Tree Island/Sprites/Background/Small Cloud 1.png" id="8_idy34"]
+[ext_resource type="Texture2D" uid="uid://d37xk1ehn8q3r" path="res://Assets/images/Palm Tree Island/Sprites/Background/Small Cloud 3.png" id="10_m84xn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_eh6qi"]
 animations = [{
@@ -62,3 +64,15 @@ script = ExtResource("6_f6i4q")
 speed = 2.0
 limit_x = -1280.0
 start_x = -100.0
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+
+[node name="SmallCloud1" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(433, 108)
+scale = Vector2(2.97297, 3.29167)
+texture = ExtResource("8_idy34")
+
+[node name="SmallCloud3" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1086, 181)
+scale = Vector2(1.15, 1.65385)
+texture = ExtResource("10_m84xn")

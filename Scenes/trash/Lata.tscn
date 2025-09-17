@@ -9,6 +9,8 @@ size = Vector2(153, 220)
 [node name="Lata" type="Area2D" groups=["object"]]
 rotation = 1.15284
 scale = Vector2(0.15, 0.15)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_g75d7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

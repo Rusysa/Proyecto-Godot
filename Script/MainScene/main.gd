@@ -6,7 +6,7 @@ extends Node2D
 # Variables del juego
 var score: int = 0
 var high_score: int = 0
-var grounded_objects_count: int = 0
+@export var grounded_objects_count: int = 0
 var base_fall_speed: float = 100.0
 var time_elapsed: float = 0.0
 
@@ -17,9 +17,12 @@ var time_elapsed: float = 0.0
 @onready var ui = $UI
 
 func _ready():
+	grounded_objects_count = 0
 	# Conectamos las señales del SignalManager
 	SignalManager.on_score_updated.connect(_on_score_updated)
 	SignalManager.on_object_grounded.connect(_on_object_grounded)
+	SignalManager.on_grounded_object_collected.connect(_on_grounded_object_collected)
+
 	
 	load_high_score()
 	ui.update_score(score)
@@ -53,15 +56,29 @@ func _on_spawn_timer_timeout():
 	add_child(new_object)
 
 # Esta función se conecta a la señal area_entered del Suelo (Ground)
+		
 func _on_ground_area_entered(area):
 	if area.is_in_group("object"):
-		area.set_physics_process(false)# Le decimos al objeto que pare
-		SignalManager.on_object_grounded.emit()
-		# Sumamos uno al contador
-		grounded_objects_count += 1
-		print("Objetos en el suelo: ", grounded_objects_count)
-		# Opcional: Cambiar el color para indicar que está en el suelo
-		area.get_node("Sprite2D").modulate = Color(0.5, 0.5, 0.5)
+		# Solo contamos si no ha sido contado antes
+		if not area.is_grounded:
+			area.set_physics_process(false)
+			# Marcamos el objeto para que recuerde que está en el suelo
+			area.is_grounded = true
+			
+			grounded_objects_count += 1
+			print("Objeto ha tocado el suelo. Total: ", grounded_objects_count)
+			
+			# Comprobamos la condición de derrota (ahora con 10)
+			if grounded_objects_count >= 10:
+				game_over()
+
+
+# Se ejecutará cuando el jugador recoja un objeto del suelo
+func _on_grounded_object_collected():
+	if grounded_objects_count > 0:
+		grounded_objects_count -= 1
+	print("Objeto del suelo recogido. Quedan: ", grounded_objects_count)
+
 
 func _on_score_updated(points):
 	score += points
@@ -84,7 +101,7 @@ func game_over():
 	Global.last_score = score
 	Global.high_score = high_score
 	
-	get_tree().change_scene_to_file("res://game_over.tscn")
+	get_tree().change_scene_to_file("res://Scenes/UI/game_over.tscn")
 
 # --- Guardado y carga de High Score ---
 func save_high_score():
