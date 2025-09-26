@@ -16,7 +16,7 @@
 [sub_resource type="GDScript" id="GDScript_q1o3j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1o3j"]
-size = Vector2(1279, 154.5)
+size = Vector2(1279, 115)
 
 [sub_resource type="Curve2D" id="Curve2D_1mr13"]
 _data = {
@@ -49,7 +49,7 @@ script = ExtResource("3_htofc")
 
 [node name="containers" type="Node2D" parent="."]
 z_index = -1
-position = Vector2(-62, -17)
+position = Vector2(-63, 0)
 
 [node name="metal" parent="containers" instance=ExtResource("6_q1o3j")]
 position = Vector2(872, 508)
@@ -70,11 +70,11 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(638.5, 642.25)
+position = Vector2(638.5, 622.5)
 shape = SubResource("RectangleShape2D_q1o3j")
 
 [node name="SpawnTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 2.0
 autostart = true
 
 [node name="UI" parent="." instance=ExtResource("12_1mr13")]

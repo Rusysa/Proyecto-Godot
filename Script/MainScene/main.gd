@@ -69,6 +69,7 @@ func _on_ground_area_entered(area):
 			area.set_physics_process(false)
 			# Marcamos el objeto para que recuerde que está en el suelo
 			area.is_grounded = true
+			
 			grounded_objects_count += 1
 			print("SUMA: '", area.name, "' ha tocado el suelo. Total ahora: ", grounded_objects_count)
 			ui.update_grounded_objects(grounded_objects_count)
