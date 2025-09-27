@@ -76,8 +76,8 @@ func deposit_object():
 	else:
 		print("¡Incorrecto!")
 		SignalManager.on_score_updated.emit(-50)
-		drop_object() # ¡Si es incorrecto, el objeto se suelta, no se destruye!
-	
+		#drop_object() # ¡Si es incorrecto, el objeto se suelta, no se destruye!
+		held_object.queue_free()
 	# Reseteamos el estado del jugador
 	held_object = null
 	can_carry = true

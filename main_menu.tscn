@@ -39,6 +39,7 @@ offset_right = 136.0
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 6
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

@@ -12,3 +12,4 @@ res://Scenes/Containers/metal.tscn
 res://Scenes/UI/ui.tscn
 res://Scenes/UI/game_over.tscn
 res://main_menu.tscn
+res://Script/player/main_character.gd
